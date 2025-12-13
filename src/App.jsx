@@ -15,7 +15,12 @@ function App() {
 
   return (
     <>
-      {isLoading? <LoadingScreen /> : <><Navbar /> <Home /></>}
+      {isLoading ?
+        <LoadingScreen /> :
+        <>
+          <Navbar />
+          <Home />
+        </>}
     </>
   )
 }

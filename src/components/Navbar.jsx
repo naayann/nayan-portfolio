@@ -24,7 +24,7 @@ const Navbar = () => {
         }>
           { isDark ? (<i class="ri-sun-line"></i>) : (<i class="ri-moon-line"></i>)}
         </p>
-        <button className='bg-text text-background hover:bg-white/90 transition-all ease rounded-4xl py-2 px-4 mr-3.5 font-semibold text-lg'>Connect</button>
+        <button className='bg-text hover:bg-text/90 text-background transition-all ease rounded-4xl py-2 px-4 mr-3.5 font-semibold text-lg'>Connect</button>
       </div>
     </nav>
     </>
