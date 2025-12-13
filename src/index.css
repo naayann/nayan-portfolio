@@ -1,21 +1,32 @@
 @import "tailwindcss";
 
-html, body {
-  background: #0e1015;
-  display: flex;
-  justify-content: center;
-  font-family: "Poppins";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-text: black;
+  --color-secondary-text: rgb(65, 65, 65);
+  --color-background: #ffffff;
+  --color-blur: rgb(120, 120, 120);
 }
 
-  @keyframes loading {
-    0% {
-      width: 0;;
-    }
-    100% {
-      width: 200px;
-    }
+.dark {
+  --color-text: white;
+  --color-secondary-text: rgb(222, 222, 222);
+  --color-background: #0e1015;
+  --color-blur: white;
+}
+
+@keyframes loading {
+  0% {
+    width: 0;
+    ;
   }
 
-  .animate-loading-bar {
+  100% {
+    width: 200px;
+  }
+}
+
+.animate-loading-bar {
   animation: loading 2s ease-out infinite;
 }
