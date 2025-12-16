@@ -6,7 +6,7 @@ const LoadingScreen = () => {
         <p className='text-text text-2xl font-semibold mb-2'>Nayan Sarania</p>
       </div>
       <div className="w-50 h-1 bg-gray-300 rounded relative overflow-hidden">
-        <div className="w-[40%] h-full bg-blue-500 shadow-[0_0_15px_#3b82f6] animate-loading-bar"></div>
+        <div className="w-[40%] h-full bg-accent shadow-[0_0_15px_#3b82f6] animate-loading-bar"></div>
       </div>
     </div>
   )
