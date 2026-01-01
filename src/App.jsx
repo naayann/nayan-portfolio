@@ -2,6 +2,7 @@ import './App.css'
 import Navbar from './components/Navbar'
 import Home from './components/Home'
 import LoadingScreen from './components/LoadingScreen'
+import Projects from './components/Projects'
 import { useEffect, useState } from 'react'
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
         <>
           <Navbar />
           <Home />
+          <Projects />
         </>}
     </>
   )
