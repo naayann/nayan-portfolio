@@ -1,4 +1,4 @@
-import logo from '../assets/logo.jpeg';
+import logo from '../assets/logo.jpg';
 import { useEffect, useState } from 'react';
 
 const Navbar = () => {
@@ -13,7 +13,7 @@ const Navbar = () => {
     <nav className='flex w-160 py-1 bg-blur/10 backdrop-blur-lg border border-blur/20 items-center justify-between rounded-4xl fixed top-6 left-1/2 -translate-x-1/2 z-900'>
 
       <div className='flex items-center p-2 ml-1.5'>
-        <img src={logo} className='w-9 rounded-full'/>
+        <img src={logo} className='w-9 rounded-full dark:invert'/>
         <p className='font-semibold text-text ml-2 text-lg'>naayann</p>
       </div>
       <div className='flex items-center'>
