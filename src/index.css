@@ -17,18 +17,3 @@
   --color-blur: white;
   --color-accent: oklch(79.5% 0.184 86.047);
 }
-
-@keyframes loading {
-  0% {
-    width: 0;
-    ;
-  }
-
-  100% {
-    width: 260px;
-  }
-}
-
-.animate-loading-bar {
-  animation: loading 1.5s ease-in-out infinite;
-}
