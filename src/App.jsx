@@ -1,4 +1,3 @@
-import './App.css'
 import { useEffect, useState } from 'react'
 import LoadingScreen from './components/LoadingScreen'
 import HomeFeed from './components/HomeFeed'
