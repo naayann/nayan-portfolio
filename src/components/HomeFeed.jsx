@@ -4,13 +4,34 @@ import { Download, Github, Twitter } from 'lucide-react'
 const HomeFeed = () => {
   return (
     <div className="container w-200 mx-auto">
+      <div className='relative bg-black h-40 w-full'>
+
+        {/* Purple Dots */}
+      <div className='absolute inset-0 overflow-hidden pointer-events-none'>
+        {[...Array(50)].map((_, i) => (
+          <div
+            key={i}
+            className='absolute w-1.5 h-1.5 rounded-full opacity-60'
+            style={{
+              backgroundColor: "white",
+              /* eslint-disable */
+              left: `${Math.random() * 100}%`,
+              top: `${Math.random() * 100}%`,
+              animation: `slow-drift ${15 + Math.random() * 20}s ease-in-out infinite`,
+              animationDelay: `${Math.random() * 5}s`
+            }}
+          />
+        ))}
+      </div>
+
+      </div>
       {/* Header Content */}
       <div className='flex items-center gap-3 justify-between'>
         <div>
-          <div>
-            <img src="/profile.jpg" alt="Nayan Sarania" className='w-40 h-40 rounded-full ring-2 ring-secondary-text/30' />
+          <div className='absolute top-36 left-105'>
+            <img src="/profile.jpg" alt="Nayan Sarania" className='w-40 h-40 rounded-full ring-5 ring-white' />
           </div>
-          <div>
+          <div className='mt-22'>
             <h1 className='font-bold text-4xl'>Nayan Sarania</h1>
             <p className='text-sm text-secondary-text'>20 • Front-End Developer • React Enthusiast</p>
           </div>
@@ -19,12 +40,12 @@ const HomeFeed = () => {
         <div>
           <div className='flex gap-2'>
             <a href="">
-              <button className='bg-black/5 hover:bg-black/10 p-2 rounded-full ring-1'>
+              <button className='hover:bg-black/5 p-2 rounded-full ring-1 ring-secondary-text/50'>
                 <Twitter />
               </button>
             </a>
             <a href="">
-              <button className='bg-black/5 hover:bg-black/10 p-2 rounded-full ring-1'>
+              <button className='hover:bg-black/5 p-2 rounded-full ring-1 ring-secondary-text/50'>
                 <Github />
               </button>
             </a>
