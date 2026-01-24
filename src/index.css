@@ -20,7 +20,8 @@
 
 body {
   font-family: "Space Grotesk"; 
-  background: #fdfdfd;
+  background: #000000;
+  color: white;
 }
 
 @layer utilities {
