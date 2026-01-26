@@ -1,42 +1,21 @@
 import React from 'react'
-import { Download, Github, Twitter } from 'lucide-react'
+import { Download, Github, Send, Twitter } from 'lucide-react'
 
 const HomeFeed = () => {
   return (
     <>
       {/* Main Content */}
-      <div className='mt-20'>
+      <div className='mt-40'>
         <div>
+          <div className='flex gap-4 items-end'>
           <div>
-            <img src="/profile.jpg" alt="Nayan Sarania" className='w-30 h-30' />
+            <img src="/profile.jpg" alt="Nayan Sarania" className='w-30 h-30 rounded-2xl ring-1 ring-gray-500 p-1' />
           </div>
-
-          <div className='flex w-full justify-between items-center'>
             <div>
-              <h1 className='font-bold text-5xl text-white py-2'>Nayan Sarania</h1>
-              <p className='text-md text-white/70 tracking-wide'>20 • Front-End Developer • React Enthusiast</p>
+              <h1 className='font-bold text-3xl text-white'>Nayan Sarania</h1>
+              <p className='text-sm text-white/70'>20 • Front-End Developer • React Enthusiast</p>
             </div>
 
-            <div>
-              <div className='flex gap-2'>
-                <a href="">
-                  <button className='hover:bg-white/10 text-white p-2 rounded-full ring-1 ring-white/50'>
-                    <Twitter />
-                  </button>
-                </a>
-                <a href="">
-                  <button className='hover:bg-white/10 text-white p-2 rounded-full ring-1 ring-white/50'>
-                    <Github />
-                  </button>
-                </a>
-                <button
-                  className='flex font-medium items-center gap-1 text-md bg-white hover:bg-white/90 text-black px-4 py-2 rounded-2xl'
-                >
-                  Resume
-                  <Download className='w-4 h-4' />
-                </button>
-              </div>
-            </div>
           </div>
         </div>
       </div>
@@ -46,11 +25,22 @@ const HomeFeed = () => {
         <h2 className='font-bold text-xl'>
           Who am I?
         </h2>
-        <p className='tracking-wider'>
+        <p className='tracking-wider mt-2'>
           I’m a frontend developer based in India, building high-performance React
           applications with a strong focus on user experience. Currently open to new
           opportunities.
         </p>
+
+        <div className='flex gap-2 mt-4'>
+        <button className='flex gap-1 border border-gray-500 py-2 px-4 rounded-xl bg-white/5 hover:bg-white/10 transition-colors duration-200'>
+          <Download className='w-4'/>
+          Download CV
+        </button>
+        <button className='flex gap-1 border text-black border-gray-500 py-2 px-4 rounded-xl bg-white/80 hover:bg-white transition-colors duration-200'>
+          <Send className='w-4'/>
+          Send an email
+        </button>
+        </div>
       </div>
 
     </>
