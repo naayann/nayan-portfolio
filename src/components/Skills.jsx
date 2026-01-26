@@ -1,6 +1,6 @@
 import React from 'react'
 
-const techStack = ['HTML', 'CSS', 'JavaScript', 'React', 'Tailwind', 'Supabase', 'Figma', 'Git', 'Github', 'NPM', 'Vite']
+const techStack = ['HTML', 'CSS', 'JavaScript', 'React', 'Tailwindcss', 'Supabase', 'Figma', 'Git', 'Github', 'NPM', 'Vite', 'Vercel']
 
 const Skills = () => {
   return <>
@@ -11,8 +11,8 @@ const Skills = () => {
         return (
           <div
             key={skill}
-            className='bg-blur/5 border border-gray-400 rounded-xl px-5 py-2 whitespace-nowrap'>
-            <p className='text-gray-400 hover:text-gray-200 transition-colors duration-300'>{skill}</p>
+            className='bg-blur/5 border border-gray-400 hover:border-gray-200 text-gray-400 hover:text-gray-200 rounded-xl px-5 py-2 transition-all duration-300'>
+            <p>{skill}</p>
           </div>
         )
       })}
