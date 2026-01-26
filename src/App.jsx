@@ -13,7 +13,7 @@ function App() {
   useEffect(() => {
     setTimeout(() => {
       setIsLoading(false)
-    }, 1200)
+    }, 1000)
   }, [])
 
   return (
@@ -21,9 +21,9 @@ function App() {
       {isLoading ?
         <LoadingScreen /> :
         <>
-          <div className="container w-200 mx-auto">
+          <div className="container w-200 mx-auto border-l border-r border-white/50 border-dashed p-4">
             <div>
-              <NavBar2 />
+              {/* <NavBar2 /> */}
             </div>
             <div className='flex flex-col'>
               <HomeFeed />
