@@ -1,4 +1,3 @@
-import React from 'react'
 import { SiJavascript, SiReact, SiTailwindcss, SiTypescript, SiSupabase, SiFigma, SiGit, SiGithub, SiNpm, SiVercel, SiNotion } from 'react-icons/si'
 
 const techStack = [
