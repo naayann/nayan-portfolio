@@ -1,11 +1,13 @@
 import { useEffect, useState } from 'react'
 import LoadingScreen from './components/LoadingScreen'
-import NavBar2 from './components/NavBar2'
+import SmoothFollower from './components/SmoothFollower'
+import DevToast from './components/DevToast'
 import HomeFeed from './components/HomeFeed'
+import Experience from './components/Experience'
 import Projects from './components/Projects'
 import Skills from './components/Skills'
-import Experience from './components/Experience'
 import Contact from './components/Contact'
+import Footer from './components/Footer'
 
 function App() {
   const [isLoading, setIsLoading] = useState(true)
@@ -13,7 +15,7 @@ function App() {
   useEffect(() => {
     setTimeout(() => {
       setIsLoading(false)
-    }, 1000)
+    }, 2000)
   }, [])
 
   return (
@@ -22,15 +24,16 @@ function App() {
         <LoadingScreen /> :
         <>
           <div className="container w-200 mx-auto border-l border-r border-white/50 border-dashed p-4">
-            <div>
-              {/* <NavBar2 /> */}
-            </div>
             <div className='flex flex-col'>
+              <SmoothFollower />
+              <DevToast />
+
               <HomeFeed />
+              <Experience />
               <Projects />
               <Skills />
-              <Experience />
               <Contact />
+              <Footer />
             </div>
           </div>
         </>
