@@ -2,12 +2,12 @@ import { useEffect, useState } from 'react'
 import LoadingScreen from './components/LoadingScreen'
 import SmoothFollower from './components/SmoothFollower'
 import DevToast from './components/DevToast'
-import HomeFeed from './components/HomeFeed'
-import Experience from './components/Experience'
-import Projects from './components/Projects'
-import Skills from './components/Skills'
-import SocialHandles from './components/SocialHandles'
-import Footer from './components/Footer'
+import HomeFeed from './components/sections/HomeFeed'
+import Experience from './components/sections/Experience'
+import Projects from './components/sections/Projects'
+import Skills from './components/sections/Skills'
+import SocialHandles from './components/sections/SocialHandles'
+import Footer from './components/sections/Footer'
 
 function App() {
   const [isLoading, setIsLoading] = useState(true)
