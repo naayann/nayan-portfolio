@@ -48,4 +48,38 @@ body {
       transform: translate(30px, 10px);
     }
   }
+
+    @keyframes downloadMove {
+
+    0%,
+    100% {
+      transform: translateY(-1px);
+    }
+
+    50% {
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes sendMove {
+
+    0%,
+    100% {
+      transform: translate(0, 0);
+    }
+
+    50% {
+      transform: translate(1px, -1px);
+    }
+  }
+
+
+  .download-anim {
+    animation: downloadMove 1.4s ease-in-out infinite;
+  }
+
+  .send-anim {
+    animation: sendMove 1.4s ease-in-out infinite;
+  }
+
 }

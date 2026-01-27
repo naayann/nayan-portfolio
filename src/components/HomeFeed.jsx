@@ -60,21 +60,23 @@ const HomeFeed = () => {
 
         <p className="mt-3 text-white/70 leading-relaxed">
           I’m a frontend developer based in India, focused on building
-          high-performance React applications with clean UI and solid UX.
+          performance oriented React applications with clean UI and solid UX. <br />
           Currently open to new opportunities.
         </p>
 
         {/* CTAs */}
         <div className="flex gap-3 mt-6">
-          <button className="flex items-center gap-2 px-5 py-2.5 rounded-xl bg-white text-black font-medium hover:bg-white/90 transition">
-            <Download className="w-4 h-4" />
+          <button className="flex items-center gap-2 px-5 py-2.5 rounded-xl bg-white text-black font-medium hover:bg-white/90 transition-colors duration-200">
+            <Download className="w-4 h-4 download-anim" />
             Download CV
           </button>
-
+          
+          <a href="https://mail.google.com/mail/?view=cm&to=nayan.sarania.work@gmail.com" target="_blank">
           <button className="flex items-center gap-2 px-5 py-2.5 rounded-xl border border-white/20 text-white hover:bg-white/5 transition">
-            <Send className="w-4 h-4" />
-            Send Email
+            <Send className="w-4 h-4 send-anim" />
+            Send Mail
           </button>
+          </a>
         </div>
       </div>
     </>
