@@ -5,75 +5,110 @@ const projects = [
   {
     img: "/comingsoon.jpg",
     title: "Coming Soon",
-    desc: "This project is currenlty under construction, and will be launching soon",
-    stack: ["React", "Typescript", "TankStack Query"],
+    desc: "A React-based project currently under development. Launching soon.",
+    stack: ["React", "TypeScript", "TanStack Query"],
     demo: "https://example.com",
-    github: "https://github.com/naayann"
+    github: "https://github.com/naayann",
+    status: "Building"
   },
   {
     img: "/comingsoon.jpg",
     title: "Coming Soon",
-    desc: "This project is currenlty under construction, and will be launching soon",
-    stack: ["React", "Typescript", "TankStack Query"],
+    desc: "A React-based project currently under development. Launching soon.",
+    stack: ["React", "TypeScript", "TanStack Query"],
     demo: "https://example.com",
-    github: "https://github.com/naayann"
+    github: "https://github.com/naayann",
+    status: "Building"
   },
   {
     img: "/comingsoon.jpg",
     title: "Coming Soon",
-    desc: "This project is currenlty under construction, and will be launching soon",
-    stack: ["React", "Typescript", "TankStack Query"],
+    desc: "A React-based project currently under development. Launching soon.",
+    stack: ["React", "TypeScript", "TanStack Query"],
     demo: "https://example.com",
-    github: "https://github.com/naayann"
+    github: "https://github.com/naayann",
+    status: "Building"
   },
   {
     img: "/comingsoon.jpg",
     title: "Coming Soon",
-    desc: "This project is currenlty under construction, and will be launching soon",
-    stack: ["React", "Typescript", "TankStack Query"],
+    desc: "A React-based project currently under development. Launching soon.",
+    stack: ["React", "TypeScript", "TanStack Query"],
     demo: "https://example.com",
-    github: "https://github.com/naayann"
+    github: "https://github.com/naayann",
+    status: "Building"
   },
 ]
 
 const Projects = () => {
   return (
     <>
-      <h1 className='mt-4 mb-4 font-bold text-xl'>Projects</h1>
+      <h1 className="mt-10 mb-6 text-xl font-bold text-white">
+        Projects
+      </h1>
 
-      <div className='grid grid-cols-1 md:grid-cols-2 gap-2'>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {projects.map((project, i) => (
           <div
             key={i}
-            className='border border-gray-500 rounded-2xl p-3'>
-
-            <img
-              src={project.img}
-              alt="coming-soon"
-              className='rounded-lg grayscale hover:grayscale-0 transition'
-            />
-
-            <div className='flex justify-between py-2'>
-
-              <h2 className='text-md font-bold'>{project.title}</h2>
-              <p className='flex items-center gap-1'>
-                <div className='w-3 h-3 rounded-full bg-green-500 animate-pulse' />
-                Building
-              </p>
+            className="group rounded-2xl border border-white/10 bg-white/5 p-4 hover:bg-white/8 transition"
+          >
+            {/* Image */}
+            <div className="overflow-hidden rounded-xl">
+              <img
+                src={project.img}
+                alt={project.title}
+                className="w-full h-44 object-cover grayscale group-hover:grayscale-0 transition duration-300"
+              />
             </div>
-            <p
-              className='text-sm text-gray-500 tracking-wider'>
+
+            {/* Header */}
+            <div className="flex items-center justify-between mt-4">
+              <h2 className="font-semibold text-white">
+                {project.title}
+              </h2>
+
+              <span className="flex items-center gap-2 text-xs text-white/60">
+                <span className="w-2 h-2 rounded-full bg-green-400" />
+                {project.status}
+              </span>
+            </div>
+
+            {/* Description */}
+            <p className="mt-2 text-sm text-white/60 leading-relaxed">
               {project.desc}
             </p>
 
-            <div className='flex gap-1 mt-2'>
+            {/* Stack */}
+            <div className="flex flex-wrap gap-2 mt-4">
               {project.stack.map((tech, iTech) => (
                 <span
                   key={iTech}
-                  className='gap-2 border border-gray-500 rounded-full px-2 text-xs text-gray-300'>
+                  className="rounded-full border border-white/15 px-3 py-1 text-xs text-white/70"
+                >
                   {tech}
                 </span>
               ))}
+            </div>
+
+            {/* Links */}
+            <div className="flex gap-4 mt-5 text-sm">
+              <a
+                href={project.demo}
+                target="_blank"
+                className="flex items-center gap-1 text-white hover:underline"
+              >
+                Live Demo
+                <ArrowUpRight className="w-4 h-4" />
+              </a>
+
+              <a
+                href={project.github}
+                target="_blank"
+                className="text-white/60 hover:text-white transition"
+              >
+                GitHub
+              </a>
             </div>
           </div>
         ))}
