@@ -39,7 +39,7 @@ const HomeFeed = () => {
             </h1>
 
             {/* Tooltip */}
-            <span 
+            <span
               className="absolute left-67 -translate-x-1/2 top-1.5 bg-white/50 text-black text-xs font-medium px-3 py-1 rounded-md opacity-0 group-hover:opacity-100 pointer-events-none transition-opacity duration-300 whitespace-nowrap z-50"
             >
               Open to Work
@@ -70,12 +70,12 @@ const HomeFeed = () => {
             <Download className="w-4 h-4 download-anim" />
             Download CV
           </button>
-          
+
           <a href="https://mail.google.com/mail/?view=cm&to=nayan.sarania.work@gmail.com" target="_blank">
-          <button className="flex items-center gap-2 px-5 py-2.5 rounded-xl border border-white/20 text-white hover:bg-white/5 transition">
-            <Send className="w-4 h-4 send-anim" />
-            Send Mail
-          </button>
+            <button className="flex items-center gap-2 px-5 py-2.5 rounded-xl border border-white/20 text-white hover:bg-white/5 transition">
+              <Send className="w-4 h-4 send-anim" />
+              Send Mail
+            </button>
           </a>
         </div>
       </div>

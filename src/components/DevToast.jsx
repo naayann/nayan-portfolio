@@ -4,7 +4,7 @@ const DevToast = () => {
   const [show, setShow] = useState(false)
 
   useEffect(() => {
-    const showTimer = setTimeout(() => setShow(true), 2000) 
+    const showTimer = setTimeout(() => setShow(true), 2000)
 
     const hideTimer = setTimeout(() => setShow(false), 5000)
 

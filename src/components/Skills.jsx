@@ -24,15 +24,16 @@ const Skills = () => {
       </h1>
 
       <div className="flex flex-wrap gap-3">
-        {techStack.map(({ name, icon: Icon }) => (
-          <span
-            key={name}
-            className="flex items-center gap-2 rounded-full bg-white/5 px-4 py-2 text-sm text-white/70 border border-white/10 hover:bg-white/10 hover:text-white transition"
-          >
-            <Icon className="w-4 h-4" />
-            {name}
-          </span>
-        ))}
+        { /* eslint-disable */
+          techStack.map(({ name, icon: Icon }) => (
+            <span
+              key={name}
+              className="flex items-center gap-2 rounded-full bg-white/5 px-4 py-2 text-sm text-white/70 border border-white/10 hover:bg-white/10 hover:text-white transition"
+            >
+              <Icon className="w-4 h-4" />
+              {name}
+            </span>
+          ))}
 
 
       </div>

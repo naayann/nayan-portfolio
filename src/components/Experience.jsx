@@ -34,9 +34,8 @@ const Experience = () => {
             </div>
 
             <ChevronDown
-              className={`w-5 h-5 text-white/60 transition-transform ${
-                open ? 'rotate-180' : ''
-              }`}
+              className={`w-5 h-5 text-white/60 transition-transform ${open ? 'rotate-180' : ''
+                }`}
             />
           </div>
         </button>
