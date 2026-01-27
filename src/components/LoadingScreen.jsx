@@ -6,7 +6,7 @@ const LoadingScreen = () => {
       <img
         src="/logo.jpg"
         alt="Logo"
-        className="w-24 h-24 rounded-full animate-pulse"
+        className="w-24 h-24 rounded-full pulse-anim"
       />
     </div>
   )
