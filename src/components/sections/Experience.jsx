@@ -30,7 +30,7 @@ const Experience = () => {
           <div className="flex items-center gap-4">
             <div className="text-right hidden sm:block">
               <p className="text-sm font-medium text-text">Internship</p>
-              <p className="text-xs text-text/60">August 2025</p>
+              <p className="text-xs text-text/60">April 2025</p>
             </div>
 
             <ChevronDown
