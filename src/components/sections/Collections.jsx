@@ -9,7 +9,7 @@ import {
 const Collections = () => {
   return (
     <>
-      <h1 className="mt-10 mb-6 text-xl font-bold text-white">
+      <h1 className="mt-10 mb-6 text-xl font-bold text-text">
         Collections
       </h1>
 
@@ -45,14 +45,14 @@ const Collections = () => {
 
 const Card = ({ icon, title, desc }) => (
   <a href="#">
-    <div className="flex items-center rounded-2xl border border-white/10 bg-white/5 p-4 hover:bg-white/8 transition cursor-not-allowed">
+    <div className="flex items-center rounded-2xl border border-border/10 bg-foreground/3 hover:bg-foreground/5 p-4 transition cursor-not-allowed">
       <div className="flex items-center gap-4">
-        <div className="bg-gray-800 p-3 rounded-md text-xl text-white">
+        <div className="bg-icon p-3 rounded-md text-xl text-text">
           {icon}
         </div>
         <div>
           <h1 className="font-semibold">{title}</h1>
-          <p className="text-white/60 text-sm">{desc}</p>
+          <p className="text-text/60 text-sm">{desc}</p>
         </div>
       </div>
     </div>

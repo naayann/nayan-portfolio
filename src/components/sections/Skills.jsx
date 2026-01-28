@@ -18,7 +18,7 @@ const techStack = [
 const Skills = () => {
   return (
     <>
-      <h1 className="mt-10 mb-5 text-xl font-bold text-white">
+      <h1 className="mt-10 mb-5 text-xl font-bold text-text">
         Skills & Technologies
       </h1>
 
@@ -27,7 +27,7 @@ const Skills = () => {
           techStack.map(({ name, icon: Icon }) => (
             <span
               key={name}
-              className="flex items-center gap-2 rounded-full bg-white/5 px-4 py-2 text-sm text-white/70 border border-white/10 hover:bg-white/10 hover:text-white transition"
+              className="flex items-center gap-2 rounded-full bg-foreground/5 hover:bg-foreground/8 px-4 py-2 text-sm text-text/70 border border-border/10  hover:text-text/90 transition"
             >
               <Icon className="w-4 h-4" />
               {name}

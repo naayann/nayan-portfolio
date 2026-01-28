@@ -1,13 +1,25 @@
 @import "tailwindcss";
 
+@theme {
+  --color-background: #030303;
+  --color-foreground: white;
+
+  --color-text: white;
+  --color-text-invert: black;
+
+  --color-border: white;
+
+  --color-icon: #1e2939;
+}
+
 html {
   scroll-behavior: smooth;
 }
 
 body {
   font-family: "Space Grotesk"; 
-  background: rgb(14, 13, 9);
-  color: white;
+  background: var(--color-background);
+  color: var(--color-text);
 }
 
 @layer utilities {
