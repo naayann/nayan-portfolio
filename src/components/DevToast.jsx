@@ -18,7 +18,7 @@ const DevToast = () => {
     <div
       className={`
         fixed top-5 left-1/2 -translate-x-1/2
-        bg-foreground/10 text-text text-xs md:text-[16px] px-5 py-2 rounded-xl
+        bg-foreground/10 text-text hidden md:block px-5 py-2 rounded-xl
         backdrop-blur-md border border-border/20
         shadow-lg transition-all duration-300
         ${show ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-10'}
