@@ -34,7 +34,7 @@ const ProjectPage = () => {
 
 
       <main className="pt-6 px-5 md:px-12 max-w-4xl mx-auto">
-        <div className="mb-5 animate-fade-in animation-delay-200">
+        <div className="mb-5 animate-fade-in animation-delay-100">
           <div className="flex flex-wrap items-baseline gap-3">
             <h1 className="text-2xl md:text-3xl font-bold tracking-tight">
               {project.title}
@@ -54,7 +54,7 @@ const ProjectPage = () => {
           </div>
         </div>
 
-        <div className="mb-5 group rounded-2xl overflow-hidden ring-1 p-1 ring-border/10 hover:ring-border/50 transition-all duration-200 animate-fade-in animation-delay-300">
+        <div className="mb-5 group rounded-2xl overflow-hidden ring-1 p-1 ring-border/10 hover:ring-border/50 transition-all duration-200 animate-fade-in animation-delay-200">
           <img
             src={project.img}
             alt={project.title}

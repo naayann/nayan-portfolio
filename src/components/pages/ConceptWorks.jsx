@@ -30,7 +30,7 @@ const ConceptWorksPage = () => {
 
       <main className="pt-10 px-5 sm:px-8 md:px-12 lg:px-16 max-w-4xl mx-auto">
         {/* Title + subtitle – same pattern as Blogs / Case Studies */}
-        <div className="mb-12 text-center animate-fade-in animation-delay-200">
+        <div className="mb-12 text-center animate-fade-in animation-delay-100">
           <h1 className="text-2xl md:text-3xl font-bold tracking-tight">
             Concept work
           </h1>
@@ -39,7 +39,7 @@ const ConceptWorksPage = () => {
           </p>
         </div>
 
-        <div className="group rounded-2xl border border-border/10 bg-foreground/3 p-8 md:p-10 text-center transition duration-300 hover:bg-foreground/5 animate-fade-in animation-delay-300">
+        <div className="group rounded-2xl border border-border/10 bg-foreground/3 p-8 md:p-10 text-center transition duration-300 hover:bg-foreground/5 animate-fade-in animation-delay-200">
           <div className="mb-6">
             <h2 className="text-xl font-semibold text-text mb-4">
               No posts yet

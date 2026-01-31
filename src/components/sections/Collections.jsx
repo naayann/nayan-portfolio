@@ -32,7 +32,7 @@ const Collections = () => {
 
       </section>
 
-      <section className="flex flex-col gap-3">
+      <section className="flex flex-col gap-3 animate-fade-in animation-delay-1000">
         <h1 className="mt-10 mb-4 text-lg md:text-xl font-bold text-text">Insights</h1>
 
         <Card

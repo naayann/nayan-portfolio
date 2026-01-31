@@ -2,7 +2,7 @@ import { GitHubCalendar } from "react-github-calendar"
 
 const GithubStats = () => {
   return (
-    <div className='flex justify-center items-center w-full overflow-hidden min-h-37.5 pt-8 animate-fade-in animation-delay-600'>
+    <div className='flex justify-center items-center w-full overflow-hidden min-h-37.5 pt-8 animate-fade-in animation-delay-700'>
       <GitHubCalendar
         username="naayann"
         colorScheme="dark"
