@@ -1,55 +1,64 @@
 import React from 'react';
 import { ChevronLeft } from 'lucide-react';
 import { Link } from 'react-router';
+import Footer from './sections/Footer';
 
 const BlogsPage = () => {
   return (
     <div className="min-h-screen text-text pb-20">
-      {/* Back link – consistent with ProjectPage */}
-      <div className="sticky top-0 z-50 pt-5 pl-5 md:pl-8 lg:pl-12">
+
+      <div className="sticky top-0 z-50 pt-4 px-4 md:px-5">
         <Link
           to="/"
-          className="inline-flex items-center gap-1.5 text-sm text-text/60 hover:text-text transition-colors duration-200"
+          className="
+                  inline-flex items-center gap-1.5
+                  text-sm text-text/60 hover:text-text
+                  rounded-lg px-3 py-1.5
+                  bg-white/5 backdrop-blur-md
+                  border border-white/10
+                  transition-colors duration-200
+                "
         >
           <ChevronLeft className="w-4 h-4" strokeWidth={2.2} />
-          Home
+          <p className='hidden md:block'>Home</p>
         </Link>
       </div>
 
       <main className="pt-10 px-5 sm:px-8 md:px-12 lg:px-16 max-w-4xl mx-auto">
         {/* Title + subtitle – same understated treatment */}
-        <div className="mb-10 animate-fade-in animation-delay-200">
-          <div className="flex flex-wrap items-baseline gap-3">
-            <h1 className="text-2xl md:text-3xl font-bold tracking-tight">
-              Blogs
-            </h1>
-            <span className="text-sm text-text/60 font-medium">
-              Thoughts & Notes
-            </span>
-          </div>
+        <div className="mb-12 text-center animate-fade-in animation-delay-200">
+          <h1 className="text-2xl md:text-3xl font-bold tracking-tight">
+            Blogs
+          </h1>
+          <p className="mt-3 text-text/60 text-[15px] sm:text-base">
+            Thoughts on frontend, design, and things I’m learning.
+          </p>
         </div>
 
-        {/* Coming soon card – styled like project cards */}
         <div className="group rounded-2xl border border-border/10 bg-foreground/3 p-8 md:p-10 text-center transition duration-300 hover:bg-foreground/5 animate-fade-in animation-delay-300">
           <div className="mb-6">
             <h2 className="text-xl font-semibold text-text mb-4">
               No posts yet
             </h2>
             <p className="text-text/70 leading-relaxed text-[15px] sm:text-base max-w-2xl mx-auto">
-              Still collecting ideas worth writing down.  
-              The first post is coming soon — likely covering React patterns, Tailwind best practices, or lessons from real projects.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Est quo sed harum laborum eum nam dolore tenetur, dolorem voluptates quas, facilis rerum, porro incidunt ab. Molestiae sed rerum quisquam?
             </p>
           </div>
 
-          <p className="text-sm text-text/50 mt-6">
-            Check back later or follow me on X for updates.
-          </p>
+          <p className="text-text/55 text-xs pt-4">
+          For more updates, follow me on X {" "}
+          <a
+            href="https://x.com/intent/follow?screen_name=naayann01"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-text/80 hover:text-white underline underline-offset-[3px] decoration-text/30 hover:decoration-text/60 transition-colors"
+          >
+            @naayann01
+          </a>
+        </p>
         </div>
 
-        {/* Tiny footer signature – consistent with ProjectPage */}
-        <div className="mt-24 text-center text-xs text-text/40 animate-fade-in animation-delay-500">
-          Writing from Imphal • 2025
-        </div>
+        <Footer />
       </main>
     </div>
   );

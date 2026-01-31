@@ -18,9 +18,9 @@ Will be back ASAP.</p>
         </div>
 
         <p className="text-text/55 text-xs pt-4">
-          For more updates, follow me on X:  →{' '}
+          For more updates, follow me on X {" "}
           <a
-            href="https://x.com/naayann01"
+            href="https://x.com/intent/follow?screen_name=naayann01"
             target="_blank"
             rel="noopener noreferrer"
             className="text-text/80 hover:text-white underline underline-offset-[3px] decoration-text/30 hover:decoration-text/60 transition-colors"
