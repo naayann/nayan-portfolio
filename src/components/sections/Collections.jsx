@@ -5,37 +5,48 @@ import {
   FiBookOpen,
   FiEdit3,
 } from 'react-icons/fi'
+import { Link } from 'react-router'
 
 const Collections = () => {
   return (
     <>
       <h1 className="mt-10 mb-6 text-lg md:text-xl font-bold text-text">
-        Collections
+        Component Library
       </h1>
 
       <section className="flex flex-col gap-3">
 
         <Card
           icon={<FiGrid />}
-          title="UI Kit"
+          title="UI Components"
           desc="Reusable React components built for this portfolio."
+          link="/componentlib"
         />
 
         <Card
           icon={<FiLayers />}
-          title="Concept Experiments"
+          title="Concept Works"
           desc="Early-stage UI ideas and interaction explorations."
+          link="/conceptwork"
         />
-        <Card
-          icon={<FiBookOpen />}
-          title="Case Studies"
-          desc="Design decisions, trade-offs, and real-world outcomes."
-        />
+
+      </section>
+
+      <section className="flex flex-col gap-3">
+        <h1 className="mt-10 mb-4 text-lg md:text-xl font-bold text-text">Insights</h1>
 
         <Card
           icon={<FiEdit3 />}
           title="Blogs"
           desc="Thoughts on frontend, design, and things I’m learning."
+          link="/blogs"
+        />
+
+        <Card
+          icon={<FiBookOpen />}
+          title="Case Studies"
+          desc="Design decisions, trade-offs, and real-world outcomes."
+          link="/casestudy"
         />
 
       </section>
@@ -43,9 +54,9 @@ const Collections = () => {
   )
 }
 
-const Card = ({ icon, title, desc }) => (
-  <a href="#">
-    <div className="flex items-center rounded-2xl border border-border/10 bg-foreground/3 hover:bg-foreground/5 p-4 transition cursor-not-allowed hover:scale-[1.01]">
+const Card = ({ icon, title, desc, link }) => (
+  <Link to={link}>
+    <div className="flex items-center rounded-2xl border border-border/10 bg-foreground/3 hover:bg-foreground/5 p-4 transition  hover:scale-[1.01]">
       <div className="flex items-center gap-4">
         <div className="bg-white/10 p-3 rounded-md text-md md:text-xl text-text">
           {icon}
@@ -56,7 +67,7 @@ const Card = ({ icon, title, desc }) => (
         </div>
       </div>
     </div>
-  </a>
+  </Link>
 )
 
 export default Collections
