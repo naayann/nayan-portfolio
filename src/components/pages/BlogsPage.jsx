@@ -1,7 +1,7 @@
 import React from 'react';
 import { ChevronLeft } from 'lucide-react';
 import { Link } from 'react-router';
-import Footer from './sections/Footer';
+import Footer from '../sections/Footer'
 
 const BlogsPage = () => {
   return (
