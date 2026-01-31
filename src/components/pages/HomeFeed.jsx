@@ -1,5 +1,13 @@
 import { Download, Send } from 'lucide-react'
 import profile from "../../assets/profile.jpg"
+import Experience from "../sections/Experience"
+import GithubStats from "../sections/GithubStats"
+import Projects from '../sections/Projects'
+import Skills from '../sections/Skills'
+import SocialHandles from '../sections/SocialHandles'
+import Collections from '../sections/Collections'
+import Footer from '../sections/Footer'
+
 const HomeFeed = () => {
   return (
     <>
@@ -74,6 +82,14 @@ const HomeFeed = () => {
           </a>
         </div>
       </div>
+
+      <Experience />
+      <GithubStats />
+      <Projects />
+      <Skills />
+      <SocialHandles />
+      <Collections />
+      <Footer />
     </>
   )
 }
