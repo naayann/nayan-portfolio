@@ -10,11 +10,11 @@ import { Link } from 'react-router'
 const Collections = () => {
   return (
     <>
-      <h1 className="mt-10 mb-6 text-lg md:text-xl font-bold text-text">
+      <h1 className="mt-10 mb-6 text-lg md:text-xl font-bold text-text animate-fade-in animation-delay-1000">
         Component Library
       </h1>
 
-      <section className="flex flex-col gap-3">
+      <section className="flex flex-col gap-3 animate-fade-in animation-delay-1000">
 
         <Card
           icon={<FiGrid />}

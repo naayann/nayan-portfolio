@@ -6,11 +6,11 @@ const Experience = () => {
 
   return (
     <>
-      <h1 className="mt-10 mb-6 text-lg md:text-xl font-bold text-text animate-fade-in animation-delay-600">
+      <h1 className="mt-10 mb-6 text-lg md:text-xl font-bold text-text animate-fade-in animation-delay-500">
         Experience
       </h1>
 
-      <div className="group rounded-2xl border border-border/10 bg-foreground/3 hover:bg-foreground/5 transition-all duration-300 hover:border-border/15 animate-fade-in animation-delay-600">
+      <div className="group rounded-2xl border border-border/10 bg-foreground/3 hover:bg-foreground/5 transition-all duration-300 hover:border-border/15 animate-fade-in animation-delay-500">
         {/* Header */}
         <button
           onClick={() => setOpen(!open)}

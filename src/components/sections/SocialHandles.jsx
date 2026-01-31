@@ -4,14 +4,14 @@ import { SiGithub, SiX } from 'react-icons/si'
 const SocialHandles = () => {
   return (
     <>
-      <h1 className="mt-10 mb-6 text-lg md:text-xl font-bold text-text">
+      <h1 className="mt-10 mb-6 text-lg md:text-xl font-bold text-text animate-fade-in animation-delay-900">
         Social Handles
       </h1>
 
       <section className="grid md:grid-cols-2 gap-4">
 
         <a href="https://x.com/intent/follow?screen_name=naayann01" target="_blank">
-          <div className="group flex items-center justify-between rounded-2xl border border-border/10 bg-foreground/3 hover:bg-foreground/5 p-4 transition duration-300 hover:scale-[1.02]">
+          <div className="group flex items-center justify-between rounded-2xl border border-border/10 bg-foreground/3 hover:bg-foreground/5 p-4 transition duration-300 hover:scale-[1.02] animate-fade-in animation-delay-900">
             <div className='flex items-center gap-4'>
               <div className='bg-background p-3 rounded-md'>
                 <SiX className="text-md md:text-xl text-text" />
