@@ -3,12 +3,12 @@ export const projects = [
   {
     title: "Weathy",
     role: "Personal Project • 2026",
-    desc: "An API-based weather app project, built to monitor weather status.",
-    description: `Weathy is a weather application focused on clean design and reliable performance.
+    desc: "Not a regular weather app, It's something special with exclusive features",
+    description: `Weathy is a weather application not only focused on clean design and performance, but also something else.
 
-It pulls real-time data, shows adaptive backgrounds according to weather conditions, supports city-based search, includes hourly and daily forecasts, and maintains a consistent dark interface across devices.
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Est quo sed harum laborum eum nam dolore tenetur, dolorem voluptates quas, facilis rerum, porro incidunt ab. Molestiae sed rerum quisquam, placeat nihil porro?
 
-Particular attention was given to responsive layouts, subtle micro-interactions, and graceful handling of loading states and network conditions.`,
+Particular attention was given to responsive layouts, subtle micro-interactions, and some exclusive features you have never seen before.`,
     img: "/comingsoon.jpg",
     stack: ["React", "TypeScript", "TanStack Query"],
     github: "https://github.com/yourusername/weathy",
